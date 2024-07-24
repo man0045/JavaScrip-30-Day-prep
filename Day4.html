@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <h4>Creating factorial Solution</h4>
+
+ <input type="number" name="" id="num">
+
+ <button onclick="res()">Result</button>
+
+ <p id="demo"></p>
+
+
+</body>
+
+<script>
+ 
+ function res(){
+  x  = document.getElementById("num").value;
+  var ans = 1;
+  for(var i = 0; i< x; i++){
+   ans = ans*(x-i);
+  }
+  document.getElementById("demo").innerHTML= ans;
+ }
+</script>
+</html>
