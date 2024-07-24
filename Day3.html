@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <h4>Checking Featured result</h4>
+
+ <input type="number" id="year">
+ <button onclick="res()">Try it</button>
+
+ <p id="ans"></p>
+</body>
+<script>
+ function res(){
+  const get = document.getElementById("year").value;
+  var gettignRes;
+
+  if((get % 4 == 0 && get % 100 != 0) || get % 400 == 0){
+   gettignRes = "Leap Year";
+  }
+  else{
+   gettignRes = "Not a leap year";
+  }
+
+  document.getElementById("ans").innerHTML = gettignRes;
+ }
+</script>
+</html>
