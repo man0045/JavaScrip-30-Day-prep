@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <div id="name">
+  <p>My name is mannu</p>
+  <p>Shamefull not to say anything</p>
+  <p>Have a nice days</p>
+ </div>
+
+ <button onclick="func()">Remove last child</button>
+
+
+</body>
+
+<script>
+ function func(){
+  const x = document.getElementById("name").lastElementChild;
+  x.remove();
+ }
+</script>
+</html>
