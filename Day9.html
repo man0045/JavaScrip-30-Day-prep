@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <div class="name" style="background-color: blueviolet;">
+  <h4> My Name is another</h4>
+ </div>
+ <button onclick="func()">clicked</button>
+<script>
+ function func(){
+  const nameElements = document.getElementsByClassName("name");
+  // Assuming you want to change the style of the first element with the class "name"
+  if (nameElements.length > 0) {
+    nameElements[0].style.backgroundColor = "yellow";
+  }
+ }
+</script>
+</body>
+</html>

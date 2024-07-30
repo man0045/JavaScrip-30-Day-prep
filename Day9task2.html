@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <button onclick="addNewDiv()">Click me to add a new div</button>
+<script>
+ function addNewDiv(){
+  const newDiv = document.createElement("div");
+  newDiv.textContent = "This is a new div element";
+  newDiv.style.backgroundColor = "lightblue";
+  newDiv.style.padding = "10px";
+  newDiv.style.marginTop = "10px";
+  document.body.appendChild(newDiv);
+ }
+</script>
+</body>
+</html>
