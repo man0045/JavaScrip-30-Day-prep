@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Change Border Color on Mouseover</title>
+ <style>
+   #changeBorderButton {
+     padding: 10px 20px;
+     border: 2px solid black;
+     background-color: lightgray;
+     cursor: pointer;
+   }
+ </style>
+</head>
+<body>
+ <button id="changeBorderButton">Hover over me</button>
+
+ <script>
+   // Function to change the border color of the button
+   function changeBorderColor() {
+     const button = document.getElementById('changeBorderButton');
+     button.style.borderColor = 'red';
+   }
+
+   // Function to reset the border color of the button
+   function resetBorderColor() {
+     const button = document.getElementById('changeBorderButton');
+     button.style.borderColor = 'black';
+   }
+
+   // Add mouseover event listener to the button
+   const button = document.getElementById('changeBorderButton');
+   button.addEventListener('mouseover', changeBorderColor);
+
+   // Add mouseout event listener to reset the border color
+   button.addEventListener('mouseout', resetBorderColor);
+ </script>
+</body>
+</html>

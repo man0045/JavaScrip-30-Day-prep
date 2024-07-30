@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Change Paragraph Content</title>
+</head>
+<body>
+ <p id="myParagraph">This is the original paragraph content.</p>
+ <button id="changeContentButton">Change Content</button>
+
+ <script>
+   // Function to change the content of the paragraph
+   function changeParagraphContent() {
+     const paragraph = document.getElementById('myParagraph');
+     paragraph.textContent = 'This is the new paragraph content.';
+   }
+
+   // Add click event listener to the button
+   const button = document.getElementById('changeContentButton');
+   button.addEventListener('click', changeParagraphContent);
+ </script>
+</body>
+</html>
