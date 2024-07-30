@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+
+  <ul id = "Name">
+   <li>Uname</li>
+   <li>Uare</li>
+  </ul>
+  <button onclick="func()"> Click!</button>
+ <script>
+
+  function func(){
+   let x = document.createElement('li');
+   x.textContent = 'newItem';
+   const ul = document.getElementById('Name');
+   ul.appendChild(x);
+  }
+ </script>
+</body>
+</html>
