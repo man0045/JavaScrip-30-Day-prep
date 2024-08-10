@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <img src="Hardik.png" id="image" srcset="" alt="Toggle Image">
+
+  <script>
+    const image = document.getElementById("image");
+
+    image.addEventListener("dblclick", () => {
+      if (image.style.display === "none") {
+        image.style.display = "block";
+      } else {
+        image.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>
